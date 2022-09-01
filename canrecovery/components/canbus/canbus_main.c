@@ -241,7 +241,7 @@ static void ctrl_task(void *arg)
             ESP_LOGW(EXAMPLE_TAG, "Initiate bus recovery in 20ms");
             vTaskDelay(pdMS_TO_TICKS(10));
             ESP_LOGW(EXAMPLE_TAG, "Initiate bus recovery in 10ms");
-            vTaskDelay(pdMS_TO_TICKS(3000));
+            vTaskDelay(pdMS_TO_TICKS(10));
             twai_initiate_recovery();    //Needs 128 occurrences of bus free signal
             ESP_LOGI(EXAMPLE_TAG, "Initiate bus recovery");
         }
